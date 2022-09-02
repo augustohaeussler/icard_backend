@@ -11,5 +11,6 @@ class User(AbstractUser):
     facebook = models.CharField(blank=True, max_length=50)
     instagram = models.CharField(blank=True, max_length=50)
     
+    
     USERNAME_FIELD = 'email'
-    REQUIRED_FIELDS = ['username',]    
+    REQUIRED_FIELDS = ['username']    
